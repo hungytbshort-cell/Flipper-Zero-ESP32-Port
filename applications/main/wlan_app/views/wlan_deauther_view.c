@@ -79,11 +79,11 @@ static bool wlan_deauther_view_input_callback(InputEvent* event, void* context) 
     // Encoder Up/Down → Targets/Auto. Im Channel-Mode interpretiert die Scene
     // diese Events stattdessen als Channel-Up/Down (siehe scene_network_deauth.c).
     if(event->type == InputTypeShort) {
-        if(event->key == InputKeyUp) {
+        if(event->key == InputKeyUp || event->key == InputKeyLeft) {
             view_dispatcher_send_custom_event(vd, WlanAppCustomEventDeautherTargets);
             return true;
         }
-        if(event->key == InputKeyDown) {
+        if(event->key == InputKeyDown || event->key == InputKeyRight) {
             view_dispatcher_send_custom_event(vd, WlanAppCustomEventDeautherAuto);
             return true;
         }
