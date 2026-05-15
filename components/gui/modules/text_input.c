@@ -464,16 +464,16 @@ static bool text_input_view_input_callback(InputEvent* event, void* context) {
         consumed = true;
         switch(event->key) {
         case InputKeyUp:
-            text_input_handle_up(text_input, model);
-            break;
-        case InputKeyDown:
-            text_input_handle_down(text_input, model);
-            break;
-        case InputKeyLeft:
             text_input_handle_left(text_input, model);
             break;
-        case InputKeyRight:
+        case InputKeyDown:
             text_input_handle_right(text_input, model);
+            break;
+        case InputKeyLeft:
+            text_input_handle_up(text_input, model);
+            break;
+        case InputKeyRight:
+            text_input_handle_down(text_input, model);
             break;
         case InputKeyOk:
             text_input_handle_ok(text_input, model, event->type);
@@ -486,16 +486,16 @@ static bool text_input_view_input_callback(InputEvent* event, void* context) {
         consumed = true;
         switch(event->key) {
         case InputKeyUp:
-            text_input_handle_up(text_input, model);
-            break;
-        case InputKeyDown:
-            text_input_handle_down(text_input, model);
-            break;
-        case InputKeyLeft:
             text_input_handle_left(text_input, model);
             break;
-        case InputKeyRight:
+        case InputKeyDown:
             text_input_handle_right(text_input, model);
+            break;
+        case InputKeyLeft:
+            text_input_handle_up(text_input, model);
+            break;
+        case InputKeyRight:
+            text_input_handle_down(text_input, model);
             break;
         case InputKeyOk:
             text_input_handle_ok(text_input, model, event->type);
@@ -511,16 +511,16 @@ static bool text_input_view_input_callback(InputEvent* event, void* context) {
         consumed = true;
         switch(event->key) {
         case InputKeyUp:
-            text_input_handle_up(text_input, model);
-            break;
-        case InputKeyDown:
-            text_input_handle_down(text_input, model);
-            break;
-        case InputKeyLeft:
             text_input_handle_left(text_input, model);
             break;
-        case InputKeyRight:
+        case InputKeyDown:
             text_input_handle_right(text_input, model);
+            break;
+        case InputKeyLeft:
+            text_input_handle_up(text_input, model);
+            break;
+        case InputKeyRight:
+            text_input_handle_down(text_input, model);
             break;
         case InputKeyOk:
             text_input_handle_ok(text_input, model, event->type);
